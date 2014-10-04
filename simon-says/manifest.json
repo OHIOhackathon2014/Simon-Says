@@ -1,18 +1,14 @@
 {
 	"manifest_version" : 2,
-
 	"name" : "Simon Says",
-	"description" : "This extension allows you to browse the web with voice commands.",
 	"version" : "0.0.0.1",
-
-	"permissions" : [
-		"audioCapture"
-	],
-
+	"minimum_chrome_version" : "25",
+	"icons" : {
+		"128" : "icon_1.png"
+	},
 	"app" : {
 		"background" : {
 			"scripts" : ["background.js"]
 		}
 	}
-
 }
