@@ -1,0 +1,1 @@
+var stringSearch = function(words) {	//searches for close	for (var k = 0; k < words.length-5; k++) {		if (words.substring(k,k+5) == "close") { 			//what goes here		}	}	//searches for open	for (var k = 0; k < words.length - 4; k++) {		if (words.substring(k,k+4) == "open") {			//stuff		}	}}
