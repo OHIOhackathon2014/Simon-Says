@@ -43,4 +43,7 @@
 	window.onfocus = function () {
 		recognition.start();
 	}
+	window.onload = function () {
+		recognition.start();
+	}
 })();
