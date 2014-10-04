@@ -6,6 +6,9 @@
 	"icons" : {
 		"128" : "icon_1.png"
 	},
+	"permissions": [
+		"audioCapture"
+	],
 	"app" : {
 		"background" : {
 			"scripts" : ["background.js"]
