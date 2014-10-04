@@ -19,5 +19,3 @@ chrome.app.runtime.onLaunched.addListener(function () {
 		createdWindow.setAlwaysOnTop(true);
 	});
 });
-
-chrome.tabs.create();
