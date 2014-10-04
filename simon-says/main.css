@@ -1,11 +1,18 @@
 body{
-	margin: 24px;
-	font-family: sans-serif;
-	font-size: 24px;
-}
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 24px;
+    background-color:   #FFF1DC;
+    border: 10px solid #888;
+    border-color: #4079B2;
+    border-radius : 16px;
+    border-style: outset;
+    padding: 10px;
+    }
+
 #voiceInput, #computerAction{
-	margin: 8px;
-	border: 1px solid #888;
-	border-radius: 16px;
-	padding: 16px;
-}
+    margin: 8px;
+    border: 2px solid #888;
+    border-radius: 16px;
+    padding: 16px;
+} 
