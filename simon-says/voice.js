@@ -12,5 +12,14 @@ recognition.onresult = function (event) {
 	}
 	
 	document.getElementById("voiceInput").innerHTML = transcript;
+	if (document.getElementById("voiceInput").innerHTML.indexOf("close") > -1){	
+		window.close();
+	}
+	if (document.getElementById("voiceInput").innerHTML.indexOf("open") > -1){	
+		window.open("http://google.com");
+	}
 }
-recognition.start();
+
+window.onfocus = function(){
+	recognition.start();
+}

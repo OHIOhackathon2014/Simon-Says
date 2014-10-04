@@ -1,13 +1,13 @@
 {
 	"manifest_version" : 2,
 	"name" : "Simon Says",
-	"version" : "0.0.0.1",
+	"version" : "0.0.0.2",
 	"minimum_chrome_version" : "25",
 	"icons" : {
 		"128" : "icon_128.png"
 	},
 	"permissions": [
-		"audioCapture"
+		"audioCapture", "alwaysOnTopWindows"
 	],
 	"app" : {
 		"background" : {
