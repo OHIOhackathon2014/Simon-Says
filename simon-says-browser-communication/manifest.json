@@ -7,7 +7,7 @@
 		"128" : "icon_128.png"
 	},
 	"permissions" : [
-		"tabs"
+		"tabs", "*://*/*"
 	],
 	"background": {
 		"scripts": ["background.js"]

@@ -9,13 +9,31 @@ function processString(action, target, url) {
 		chrome.tabs.create({url: url});
 	}
 	else if (action == "goto"){
-		chrome.tabs.getCurrent(function(tab){
-			tab.url = url;
+		var code = "window.location.href = \"" + url + "\";";
+		chrome.tabs.query({'active': true}, function (tab){
+			chrome.tabs.executeScript(tab[0].id, {code: code});
 		});
 	}
 	else if (action == "close"){
-		chrome.tabs.getCurrent(function(tab){
-			chrome.tabs.remove(tab);
+		chrome.tabs.query({'active': true}, function (tab){
+			chrome.tabs.remove(tab[0].id);
+		});
+	}
+	else if (action == "back"){
+		var code = "window.history.back();";
+		chrome.tabs.query({'active': true}, function (tab){
+			chrome.tabs.executeScript(tab[0].id, {code: code});
+		});
+	}
+	else if (action == "forward"){
+		var code = "window.history.forward();";
+		chrome.tabs.query({'active': true}, function (tab){
+			chrome.tabs.executeScript(tab[0].id, {code: code});
+		});
+	}
+	else if (action == "refresh"){
+		chrome.tabs.query({'active': true}, function (tab){
+			chrome.tabs.reload(tab[0].id);
 		});
 	}
 }
