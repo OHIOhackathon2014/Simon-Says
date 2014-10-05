@@ -36,10 +36,6 @@
 		processString(transcript);
 	}
 	
-	recognition.onspeechend = function (){
-		recognition.start();
-	}
-	
 	function processString(str){
 		//Split the string into tokens
 		var arr = str.split(" ");

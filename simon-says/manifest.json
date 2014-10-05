@@ -1,11 +1,15 @@
 {
 	"manifest_version" : 2,
 	"name" : "Simon Says",
-	"version" : "0.0.0.10",
-	"minimum_chrome_version" : "26",
+	"version" : "0.5.0.0",
+	"minimum_chrome_version" : "28",
+	
+	"default_locale": "en",
+	"description": "Browse the web with your microphone.",
 	"icons" : {
 		"128" : "icon_128.png"
 	},
+	
 	"permissions": [
 		"audioCapture", "alwaysOnTopWindows"
 	],
