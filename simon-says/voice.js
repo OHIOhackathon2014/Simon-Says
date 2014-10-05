@@ -1,6 +1,6 @@
 (function () {
 	//Extension communication
-	var childExtensionID = "ockkmhhdkmpecgpohbgmnoepflkdahln";
+	var childExtensionID = "dgenmeabhemcmchipmmkmflncedibomd";
 	
 	var port = chrome.runtime.connect(childExtensionID, {
 			name : "simonconnection"
