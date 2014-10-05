@@ -8,4 +8,14 @@ function processString(action, target, url) {
 	if (action == "open"){
 		chrome.tabs.create({url: url});
 	}
+	else if (action == "goto"){
+		chrome.tabs.getCurrent(function(tab){
+			tab.url = url;
+		});
+	}
+	else if (action == "close"){
+		chrome.tabs.getCurrent(function(tab){
+			chrome.tabs.remove(tab);
+		});
+	}
 }

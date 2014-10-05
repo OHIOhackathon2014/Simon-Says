@@ -43,7 +43,7 @@
 		//Booleans that check if the string is valid command
 		var OPEN_SITE = (arr.indexOf("open") == 0 && arr.length != 1);
 		var GO_TO_SITE = false;
-		var EXIT_APP = ((arr.indexOf("exit") == 0 || arr.indexOf("exit") == 0) && arr.length == 1);
+		var EXIT_APP = ((arr.indexOf("exit") == 0 || arr.indexOf("quit") == 0) && arr.length == 1);
 		
 		if (OPEN_SITE){
 			port.postMessage({
