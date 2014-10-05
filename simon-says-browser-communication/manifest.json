@@ -3,8 +3,7 @@
 	"name" : "Simon Says Browser Extension",
 	"version" : "1.0",
 	"minimum_chrome_version" : "28",
-	
-	"default_locale": "en",
+
 	"description": "To be used in conjunction with Simon Says, for browser interaction.",
 	"icons" : {
 		"128" : "icon_128.png"
