@@ -11,8 +11,8 @@ chrome.app.runtime.onLaunched.addListener(function () {
 			
 			width : width,
 			height : height,
-			left : 0,
-			top : 0
+			left : screenWidth-width,
+			top : screenHeight-height
 		},
 		resizable : false
 	}, function (createdWindow){
